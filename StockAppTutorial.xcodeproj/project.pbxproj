@@ -11,6 +11,7 @@
 		F835D8242943517E00418E6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835D8232943517E00418E6D /* ContentView.swift */; };
 		F835D8262943517F00418E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F835D8252943517F00418E6D /* Assets.xcassets */; };
 		F835D8292943517F00418E6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F835D8282943517F00418E6D /* Preview Assets.xcassets */; };
+		F835D831294351F300418E6D /* StocksAPI in Frameworks */ = {isa = PBXBuildFile; productRef = F835D830294351F300418E6D /* StocksAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F835D831294351F300418E6D /* StocksAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = StockAppTutorial;
+			packageProductDependencies = (
+				F835D830294351F300418E6D /* StocksAPI */,
+			);
 			productName = StockAppTutorial;
 			productReference = F835D81E2943517E00418E6D /* StockAppTutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F835D8152943517E00418E6D;
+			packageReferences = (
+				F835D82F294351F300418E6D /* XCRemoteSwiftPackageReference "StocksAPI" */,
+			);
 			productRefGroup = F835D81F2943517E00418E6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F835D82F294351F300418E6D /* XCRemoteSwiftPackageReference "StocksAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JoaoGripp/StocksAPI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F835D830294351F300418E6D /* StocksAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F835D82F294351F300418E6D /* XCRemoteSwiftPackageReference "StocksAPI" */;
+			productName = StocksAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F835D8162943517E00418E6D /* Project object */;
 }

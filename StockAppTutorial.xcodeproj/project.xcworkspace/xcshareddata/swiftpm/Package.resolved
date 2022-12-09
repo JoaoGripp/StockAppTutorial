@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "stocksapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JoaoGripp/StocksAPI",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ff0a84b75a59a8b5f071dce4ff252c6eee39cb0f"
+      }
+    }
+  ],
+  "version" : 2
+}
